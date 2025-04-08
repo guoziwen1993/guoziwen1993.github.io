@@ -266,7 +266,7 @@
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -306,7 +306,7 @@
         <div class="label text-third-text-color text-sm">分类</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">5</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">6</div>
         <div class="label text-third-text-color text-sm">文章</div>
     </a>
 </div>
@@ -331,6 +331,48 @@
                 
                 <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
                     <h3 class="home-article-title">
+                        <a href="/2025/04/08/Jenkins%E6%B5%81%E6%B0%B4%E7%BA%BF%E9%83%A8%E7%BD%B2/">
+                            Jenkins流水线部署
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            1、jenkins部署问题由于A集群优雅部署时，第一台机器进程未被杀死，此时不能立即重启新的应用，防止重启出现异常。但是一直同步等待当前脚本执行结束才继续操作下一台机器，会及其消耗部署时间
+2、部署解决方案把jenkins的ssh执行restart_my.sh脚本拆成2个shell脚本，改成异步执行即可restart_my.sh脚本#!&#x2F;bin&#x2F;sh
+#优雅停止服务kil...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Tue Apr 08 2025 09:21:12 GMT+0800">
+                
+                    2025-04-08
+                
+            </span>
+        </span>
+        
+        
+    </div>
+
+    <a href="/2025/04/08/Jenkins%E6%B5%81%E6%B0%B4%E7%BA%BF%E9%83%A8%E7%BD%B2/">阅读全文<span class="seo-reader-text">Jenkins流水线部署</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
                         <a href="/2025/04/07/SpringBoot-%E4%BC%98%E9%9B%85%E5%81%9C%E6%9C%8D%E5%8A%A1/">
                             SpringBoot 优雅停服务
                         </a>
@@ -339,7 +381,8 @@
                     <div class="home-article-content markdown-body">
                         
                             
-                            
+                            SpringBoot 优雅停服务1、为什么要使用优雅停机暴力停机，往往会出现事务执行、业务处理中断的情况，导致数据库中存在脏数据、系统中存在残留文件等情况
+2、SpringBoot的优雅停机优雅停机是springboot的特性之一，在收到终止信号后，不再接受、处理新请求，但会在终止进程之前预留一小段缓冲时间，以完成正在处理的请求。SpringBoot自带优雅停机的版本，最低版本要求2.3.0...
                         
                     </div>
 
@@ -553,7 +596,7 @@ Qu...
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        共撰写了 5 篇文章
+                        共撰写了 6 篇文章
                     </span>
                     
                 </p>
